@@ -26,7 +26,7 @@ class Library {
     }
     readBook() {
         for (let book of this.books) {
-            console.log(`${book.getTitle} cua ${book.getAuthor}, id: ${book.getId}`);
+            console.log(`${book.getTitle()} cua ${book.getAuthor()}, id: ${book.getId()}`);
         }
     }
     addBook(book) {
