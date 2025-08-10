@@ -36,7 +36,7 @@ class Library {
     }
     readBook() {
         for (let book of this.books) {
-            console.log(`${book.getTitle} cua ${book.getAuthor}, id: ${book.getId}`);
+            console.log(`${book.getTitle()} cua ${book.getAuthor()}, id: ${book.getId()}`);
         }
     }
     addBook(book: Book) {
@@ -52,7 +52,7 @@ class Library {
     searchBook(id: string) {
         const foundBooks = this.books.filter(book => book.getId() === id)
         for (let book of foundBooks) {
-           console.log(`${book.getTitle} cua ${book.getAuthor}, id: ${book.getId}`);
+           console.log(`${book.getTitle()} cua ${book.getAuthor()}, id: ${book.getId()}`);
         }
     }
 }
@@ -73,3 +73,4 @@ library.addBook(book5);
 library.readBook();
 
 library.searchBook("1");
+
