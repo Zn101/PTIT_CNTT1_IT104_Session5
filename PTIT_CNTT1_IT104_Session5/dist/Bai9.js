@@ -26,7 +26,7 @@ class Library {
     }
     readBook() {
         for (let book of this.books) {
-            console.log(`${book.getTitle} cua ${book.getAuthor}, id: ${book.getId}`);
+            console.log(`${book.getTitle()} cua ${book.getAuthor()}, id: ${book.getId()}`);
         }
     }
     addBook(book) {
@@ -40,7 +40,7 @@ class Library {
     searchBook(id) {
         const foundBooks = this.books.filter(book => book.getId() === id);
         for (let book of foundBooks) {
-            console.log(`${book.getTitle} cua ${book.getAuthor}, id: ${book.getId}`);
+            console.log(`${book.getTitle()} cua ${book.getAuthor()}, id: ${book.getId()}`);
         }
     }
     deleteBook(id) {
